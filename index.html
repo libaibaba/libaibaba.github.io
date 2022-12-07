@@ -1,1 +1,64 @@
-<h1>Hello Github Pages</h1>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <style>
+    body {
+      background-color: lightgrey;
+      color: blue;
+    }
+    
+    h1 {
+      background-color: white;
+      color: blue;
+      font-size: 300%;
+    }
+    #grad1 {
+      height: 200px;
+      background-color: red; /* 不支持线性的时候显示 */
+      background-image: linear-gradient(to right, red , yellow);
+      background-position: 0px 0px, 10px 10px;
+      background-size: 420px 20px;
+    }
+    </style>
+    </head>
+    <h1>Hello Github Pages</h1>
+    <body>
+      <!-- <div id="grad1"></div> -->
+      <grad1><img src="4.png" width="1920" height="1080"></grad1>
+    </body>
+    <!-- <video width="1280" height="720" controls>
+      <source src="1.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      <source src="movie.webm" type="video/webm">
+      <source src="index.m3u8" type="application/x-mpegURL">
+      <object data="movie.mp4" width="1280" height="720">
+        <embed src="movie.swf" width="1280" height="720">
+      </object> 
+    </video> -->
+    <a href="2.png" ><h1>download</h1> </a>
+    <body background="2.png"></body>
+    </html>
+    <script language="javascript">  
+      setInterval(test,5000);  
+      var array=new Array();  
+      var index=0;  
+      var array= new Array("1.jpg","2.png","3.png","4.png","4.png");  
+      function test()  
+      { 
+        var myimg=document.getElementById("imgs");  
+        if(index==array.length-1)
+        {
+           index=0;
+        }
+        else
+        { 
+          index++; 
+        }  
+        myimg.src=array[index];  
+      }  
+      </script>
+    <body >  
+      
+    <img id="imgs" src = "1.jpg"/> </body>  
+    
+    </html> 
